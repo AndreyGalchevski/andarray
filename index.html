@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="style.css" rel="stylesheet">    
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    >
+    <title>Andrey Galchevski</title>
+</head>
+<body>
+    <div>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper grey lighten-5"><a class="sidenav-trigger" ref="#" data-target="slide-out"><i class="material-icons grey darken-4">menu</i></a>
+                    <ul class="class right hide-on-med-and-down">
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#experience-section">Experience</a></li>
+                        <li><a href="#portfolio-section">Portfolio</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="slide-out">
+            <li><a href="#home-section" onclick="closeSideNav()">Home</a></li>
+            <li><a href="#experience-section" onclick="closeSideNav()">Experience</a></li>
+            <li><a href="#portfolio-section" onclick="closeSideNav()">Portfolio</a></li>
+            <li><a href="#contact-section" onclick="closeSideNav()">Contact</a></li>
+        </ul>
+    </div>
+    <div class="section" id="home-section">
+        <h1>Andrey Galchevski</h1><img class="circle responsive-img z-depth-5" height="80vh" width="100vh" src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524504338/andarray/avatar/ava.png" />
+        <p class="flow-text bounce-on-hover">Passionate about technology</p>
+        <p class="flow-text shake-on-hover">Never stop learning</p>
+        <p class="flow-text swing-on-hover">Building a better world</p>
+        <p class="flow-text rubberBand-on-hover">Through web</p>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax" id="parallax1"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547972/andarray/parallax/code.jpg" /></div>
+    </div>
+    <div class="section" id="experience-section">
+        <h1>Experience</h1>
+        <div class="section"><i class="flow-text fas fa-database"></i>
+            <p class="flow-text">Data Analyst/Statistician</p>
+        </div>
+        <div class="section"><i class="flow-text fas fa-male"></i>
+            <p class="flow-text">Team Lead</p>
+        </div>
+        <div class="section"><i class="flow-text fas fa-code"></i>
+            <p class="flow-text">Full-Stack Dev</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax" id="parallax2"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/nature.jpg" /></div>
+    </div>
+    <div class="section" id="portfolio-section">
+        <h1>Portfolio</h1>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524496784/andarray/portfolio/veganfuel-website.png" alt="VeganFuel app website screenshot" /><a class="btn-floating halfway-fab waves-effect waves-light red" href="https://play.google.com/store/apps/details?id=andreygalchevski.veganfuel&amp;hl=en_GB"
+                            target="_blank"><i class="material-icons">link</i></a></div>
+                    <div class="card-content">
+                        <p class="flow-text">VeganFuel</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524496785/andarray/portfolio/totalliberation-website.png" alt="Total Liberation Israel website screenshot" /><a class="btn-floating halfway-fab waves-effect waves-light red"
+                            href="https://www.totalliberationisrael.com" target="_blank"><i class="material-icons">link</i></a></div>
+                    <div class="card-content">
+                        <p class="flow-text">Total Liberation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524496783/andarray/portfolio/insapient-website.png" alt="VeganFuel app website screenshot" /><a class="btn-floating halfway-fab waves-effect waves-light red" href="#" target="_blank"><i class="material-icons">link</i></a></div>
+                    <div
+                        class="card-content">
+                        <p class="flow-text">Insapient</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax" id="parallax3"><img src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/space.jpg" /></div>
+    </div>
+
+    <div class="section" id="contact-section">
+        <h1>Contact</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col s2 offset-s3"><a class="btn-floating grey darken-4 pulse" href="https://www.facebook.com/galchevski" target="_blank"> <i class="fab fa-facebook-f media-icon" style="vertical-align: middle;"></i></a></div>
+                <div class="col s2"><a class="btn-floating grey darken-4 pulse" href="https://www.linkedin.com/in/andrey-galchevski-b40999a3" target="_blank"> <i class="fab fa-linkedin media-icon" style="vertical-align: middle;"></i></a></div>
+                <div class="col s2"><a class="btn-floating grey darken-4 pulse" href="https://plus.google.com/u/0/100544946651633067296" target="_blank"> <i class="fab fa-google media-icon" style="vertical-align: middle;"></i></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script 
+        defer 
+        src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" 
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" 
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>
