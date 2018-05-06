@@ -1,5 +1,5 @@
 <template>
-	<div class="experience">
+	<div class="experience" id="experience-section">
 		<h1>Experience</h1>
         <div class="section">
 			<i class="flow-text fas fa-database"></i>

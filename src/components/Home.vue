@@ -1,5 +1,5 @@
 <template>
-	<div class="welcome">
+	<div class="home" id="home-section">
 		<h1>Andrey Galchevski</h1>
 		<img 
 			class="circle responsive-img z-depth-5" 
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-	name: 'Welcome',
+	name: 'Home',
 	props: {
 		msg: String
 	}
