@@ -2,60 +2,24 @@
 	<div class="portfolio" id="portfolio-section">
 		<h1>Portfolio</h1>
         <div class="row">
-            <div class="col s12 m4">
+            <div class="col s12 m4" v-for="project in projects" :key="project.name">
                 <div class="card">
                     <div class="card-image">
 						<img 
-							src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496784/andarray/portfolio/veganfuel-website.png" 
-							alt="VeganFuel app website screenshot" />
+							:src="project.img" 
+							:alt="project.imgAlt" />
 						<a 
 							class="btn-floating halfway-fab waves-effect waves-light red" 
-							href="https://play.google.com/store/apps/details?id=andreygalchevski.veganfuel&amp;hl=en_GB"
+							:href="project.link"
                             target="_blank">
 							<i class="material-icons">link</i>
 						</a>
 					</div>
                     <div class="card-content">
-                        <p class="flow-text">VeganFuel</p>
+                        <p class="flow-text">{{project.name}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-						<img 
-							src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496785/andarray/portfolio/totalliberation-website.png" 
-							alt="Total Liberation Israel website screenshot" />
-						<a 
-							class="btn-floating halfway-fab waves-effect waves-light red"
-                            href="https://www.totalliberationisrael.com" 
-							target="_blank">
-							<i class="material-icons">link</i>
-						</a>
-					</div>
-                    <div class="card-content">
-                        <p class="flow-text">Total Liberation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card">
-                    <div class="card-image">
-						<img 
-							src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496783/andarray/portfolio/insapient-website.png" 
-							alt="VeganFuel app website screenshot" />
-						<a 
-							class="btn-floating halfway-fab waves-effect waves-light red" 
-							href="#" 
-							target="_blank">
-							<i class="material-icons">link</i>
-						</a>
-					</div>
-                    <div class="card-content">
-						<p class="flow-text">Insapient</p>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </template>
@@ -63,8 +27,29 @@
 <script>
 export default {
 	name: 'Portfolio',
-	props: {
-		msg: String
+	data () {
+		return {
+			projects: [
+				{
+					name: 'Total Liberation',
+					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496785/andarray/portfolio/totalliberation-website.png',
+					imgAlt: 'Total Liberation Israel website screenshot',
+					link: 'https://www.totalliberationisrael.com'
+				},
+				{
+					name: 'VeganFuel',
+					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496784/andarray/portfolio/veganfuel-website.png',
+					imgAlt: 'VeganFuel app screenshot from Google Play website',
+					link: 'https://play.google.com/store/apps/details?id=andreygalchevski.veganfuel&amp;hl=en_GB'
+				},
+				{
+					name: 'Insapient',
+					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496783/andarray/portfolio/insapient-website.png',
+					imgAlt: 'Insapient band website screenshot',
+					link: 'https://www.google.com'
+				}
+			]
+		}
 	}
 }
 </script>

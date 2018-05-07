@@ -2,7 +2,10 @@
 	<div class="navbar">
 		<div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper grey lighten-5"><a class="sidenav-trigger" ref="#" data-target="slide-out"><i class="material-icons grey darken-4">menu</i></a>
+                <div class="nav-wrapper grey lighten-1">
+					<a class="sidenav-trigger" ref="#" data-target="slide-out">
+						<i class="material-icons grey lighten-1">menu</i>
+					</a>
                     <a  
 						href="#"
 						class="brand-logo center">
