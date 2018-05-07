@@ -6,7 +6,7 @@
                     <a  
 						href="#"
 						class="brand-logo center">
-						<img src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1525625855/andarray/logo/logo.png"/>
+						<img src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1525671114/andarray/logo/logo.png"/>
 					</a>
 					<ul class="class hide-on-med-and-down">
                         <li><a href="#home-section">Home</a></li>
@@ -17,20 +17,34 @@
                 </div>
             </nav>
         </div>
-        <ul class="sidenav" id="slide-out">
-            <li><a href="#home-section" onclick="closeSideNav()">Home</a></li>
-            <li><a href="#experience-section" onclick="closeSideNav()">Experience</a></li>
-            <li><a href="#portfolio-section" onclick="closeSideNav()">Portfolio</a></li>
-            <li><a href="#contact-section" onclick="closeSideNav()">Contact</a></li>
+        <ul class="sidenav" id="slide-out" ref="mySideNav">
+            <li><a href="#home-section" v-on:click="closeSideNav()">Home</a></li>
+            <li><a href="#experience-section" v-on:click="closeSideNav()">Experience</a></li>
+            <li><a href="#portfolio-section" v-on:click="closeSideNav()">Portfolio</a></li>
+            <li><a href="#contact-section" v-on:click="closeSideNav()">Contact</a></li>
         </ul>
 	</div>
 </template>
 
 <script>
+import M from 'materialize-css/dist/js/materialize.js'
+
 export default {
 	name: 'Navbar',
-	props: {
-		msg: String
+	data () {
+		return {
+			sideNavInstance: null
+		}
+	},
+	mounted () {
+		this.sideNavInstance = M.Sidenav.init(this.$refs.mySideNav, {})
+	},
+	methods: {
+		closeSideNav() {
+			if (this.sideNavInstance.isOpen) {
+				this.sideNavInstance.close()
+			}
+		}
 	}
 }
 </script>
@@ -40,7 +54,8 @@ nav ul li a {
     color: #212121;
 }
 .brand-logo img{
-	height: 10vh;
-	width: 15vh;
+	padding-top: 0.5vh;
+	height: 7vh;
+	width: 13vh;
 }
 </style>
