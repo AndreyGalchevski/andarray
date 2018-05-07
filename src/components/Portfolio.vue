@@ -6,7 +6,7 @@
                 <div class="card">
                     <div class="card-image">
 						<img 
-							:src="project.img" 
+							:src="project.imgSrc" 
 							:alt="project.imgAlt" />
 						<a 
 							class="btn-floating halfway-fab waves-effect waves-light red" 
@@ -32,19 +32,19 @@ export default {
 			projects: [
 				{
 					name: 'Total Liberation',
-					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496785/andarray/portfolio/totalliberation-website.png',
+					imgSrc: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496785/andarray/portfolio/totalliberation-website.png',
 					imgAlt: 'Total Liberation Israel website screenshot',
 					link: 'https://www.totalliberationisrael.com'
 				},
 				{
 					name: 'VeganFuel',
-					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496784/andarray/portfolio/veganfuel-website.png',
+					imgSrc: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496784/andarray/portfolio/veganfuel-website.png',
 					imgAlt: 'VeganFuel app screenshot from Google Play website',
 					link: 'https://play.google.com/store/apps/details?id=andreygalchevski.veganfuel&amp;hl=en_GB'
 				},
 				{
 					name: 'Insapient',
-					img: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496783/andarray/portfolio/insapient-website.png',
+					imgSrc: 'https://res.cloudinary.com/dqvimfd8b/image/upload/v1524496783/andarray/portfolio/insapient-website.png',
 					imgAlt: 'Insapient band website screenshot',
 					link: 'https://www.google.com'
 				}
@@ -55,4 +55,10 @@ export default {
 </script>
 
 <style scoped>
+.portfolio {
+	display: block;
+	position: relative;
+	background-color: white;
+	z-index: 1;
+}
 </style>

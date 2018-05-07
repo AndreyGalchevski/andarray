@@ -33,6 +33,12 @@ export default {
 </script>
 
 <style scoped>
+.contact {
+	display: block;
+	position: relative;
+	background-color: white;
+	z-index: 1;
+}
 .media-icon {
     font-size: 3vh;
     color: #eeeeee;

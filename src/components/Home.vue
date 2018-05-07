@@ -23,6 +23,12 @@ export default {
 </script>
 
 <style scoped>
+.home {
+	display: block;
+	position: relative;
+	background-color: white;
+	z-index: 1;
+}
 .bounce-on-hover:hover {
 	-webkit-animation: bounce 1s;
 	animation: bounce 1s;

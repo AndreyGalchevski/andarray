@@ -26,4 +26,10 @@ export default {
 </script>
 
 <style scoped>
+.experience {
+	display: block;
+	position: relative;
+	background-color: white;
+	z-index: 1;
+}
 </style>

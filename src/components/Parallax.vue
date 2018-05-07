@@ -1,5 +1,6 @@
 <template>
-	<div class="parallax">
+	<div class="ParallaxContainer">
+		<img :src="imgSrc">
 	</div>
 </template>
 
@@ -7,24 +8,18 @@
 export default {
 	name: 'Parallax',
 	props: {
-		msg: String
+		imgSrc: String
 	}
 }
 </script>
 
-<style scoped>
-h3 {
-	margin: 40px 0 0;
-}
-ul {
-	list-style-type: none;
-	padding: 0;
-}
-li {
-	display: inline-block;
-	margin: 0 10px;
-}
-a {
-	color: #42b983;
+<style>
+.ParallaxContainer {
+	display: flex;
+	flex: 1 0 auto;
+	position: relative;
+	height: 100vh;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
 }
 </style>
