@@ -1,5 +1,5 @@
 <template>
-	<div class="contact" id="contact-section">
+	<div class="contact section" id="contact-section">
 		<h1>Contact</h1>
 		<div class="container">
 			<div class="row">

@@ -1,11 +1,11 @@
 <template>
-	<div class="home" id="home-section">
+	<div class="home section" id="home-section">
 		<div class="zoomIny">
 			<h1>Andrey Galchevski</h1>
 			<img 
 				class="circle responsive-img z-depth-5 zoomIny" 
 				height="80vh" 
-				width="100vh" 
+				width="100vh"
 				src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524504338/andarray/avatar/ava.png" />
 		</div>
         <p class="flow-text bouncy">Passionate about technology</p>
@@ -52,23 +52,23 @@ export default {
 	animation: shake 1.5s;
 	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
-	-webkit-animation-delay: 3s;		
-	animation-delay: 3s;
+	-webkit-animation-delay: 3.5s;		
+	animation-delay: 3.5s;
 }
 .swingy {
 	-webkit-animation: swing 1.5s;
 	animation: swing 1.5s;
 	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
-	-webkit-animation-delay: 4.5s;		
-	animation-delay: 4.5s;
+	-webkit-animation-delay: 5s;		
+	animation-delay: 5s;
 }
 .bandy {
 	-webkit-animation: rubberBand 1.5s;
 	animation: rubberBand 1.5s;
 	-webkit-animation-duration: 1.5s;
 	animation-duration: 1.5s;
-	-webkit-animation-delay: 6s;		
-	animation-delay: 6s;
+	-webkit-animation-delay: 6.5s;		
+	animation-delay: 6.5s;
 }
 </style>

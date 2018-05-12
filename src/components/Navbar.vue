@@ -9,7 +9,7 @@
                     <a  
 						href="#"
 						class="brand-logo center">
-						<img src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1525671114/andarray/logo/logo.png"/>
+						<img src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1525671114/andarray/logo/logo.png" style="vertical-align: middle"/>
 					</a>
 					<ul class="class hide-on-med-and-down">
                         <li><a href="#home-section">Home</a></li>
@@ -57,8 +57,8 @@ nav ul li a {
     color: #212121;
 }
 .brand-logo img{
-	padding-top: 0.5vh;
-	height: 7vh;
-	width: 13vh;
+	height: 5vh;
+	width: 11vh;
+	padding-bottom: 0.5vh;
 }
 </style>
