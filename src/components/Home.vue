@@ -17,10 +17,7 @@
 
 <script>
 export default {
-	name: 'Home',
-	props: {
-		msg: String
-	}
+	name: 'Home'
 }
 </script>
 
@@ -32,43 +29,43 @@ export default {
 	z-index: 1;
 }
 .zoomIny {
-	-webkit-animation: zoomIn 2s;
-	animation: zoomIn 2s;
-	-webkit-animation-duration: 2s;
-	animation-duration: 2s;
+	-webkit-animation: zoomIn 1s;
+	animation: zoomIn 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-delay: 0s;		
 	animation-delay: 0s;
 }
 .bouncy {
-	-webkit-animation: bounce 1.5s;
-	animation: bounce 1.5s;
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
+	-webkit-animation: bounce 1s;
+	animation: bounce 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 1s;		
+	animation-delay: 1s;
+}
+.shaky {
+	-webkit-animation: shake 1s;
+	animation: shake 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-delay: 2s;		
 	animation-delay: 2s;
 }
-.shaky {
-	-webkit-animation: shake 1.5s;
-	animation: shake 1.5s;
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
-	-webkit-animation-delay: 3.5s;		
-	animation-delay: 3.5s;
-}
 .swingy {
-	-webkit-animation: swing 1.5s;
-	animation: swing 1.5s;
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
-	-webkit-animation-delay: 5s;		
-	animation-delay: 5s;
+	-webkit-animation: swing 1s;
+	animation: swing 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 3s;		
+	animation-delay: 3s;
 }
 .bandy {
-	-webkit-animation: rubberBand 1.5s;
-	animation: rubberBand 1.5s;
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
-	-webkit-animation-delay: 6.5s;		
-	animation-delay: 6.5s;
+	-webkit-animation: rubberBand 1s;
+	animation: rubberBand 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-delay: 4s;		
+	animation-delay: 4s;
 }
 </style>

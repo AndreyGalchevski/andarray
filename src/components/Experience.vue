@@ -1,7 +1,7 @@
 <template>
 	<div class="experience section" id="experience-section">
 		<h1>Experience</h1>
-		<div class="row">
+		<div class="row container">
 			<div class="col s12 m4" v-for="position in positions" :key="position.name">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">

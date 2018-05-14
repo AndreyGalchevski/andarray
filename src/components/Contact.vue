@@ -4,17 +4,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s2 offset-s3">
-					<a class="btn-floating grey darken-4 pulse" href="https://www.facebook.com/galchevski" target="_blank">
+					<a class="btn-floating indigo pulse" href="https://www.facebook.com/galchevski" target="_blank">
 						<i class="fab fa-facebook-f media-icon" style="vertical-align: middle;"></i>
 					</a>
 				</div>
 				<div class="col s2">
-					<a class="btn-floating grey darken-4 pulse" href="https://www.linkedin.com/in/andrey-galchevski-b40999a3" target="_blank">
+					<a class="btn-floating indigo pulse" href="https://www.linkedin.com/in/andrey-galchevski-b40999a3" target="_blank">
 						<i class="fab fa-linkedin media-icon" style="vertical-align: middle;"></i>
 					</a>
 				</div>
 				<div class="col s2">
-					<a class="btn-floating grey darken-4 pulse" href="https://github.com/AndreyGalchevski" target="_blank">
+					<a class="btn-floating indigo pulse" href="https://github.com/AndreyGalchevski" target="_blank">
 						<i class="fab fa-github media-icon" style="vertical-align: middle;"></i>
 					</a>
 				</div>

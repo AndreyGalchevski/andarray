@@ -1,7 +1,7 @@
 <template>
 	<div class="portfolio section" id="portfolio-section">
 		<h1>Portfolio</h1>
-        <div class="row">
+        <div class="row container">
             <div class="col s12 m4" v-for="project in projects" :key="project.name">
                 <div class="card">
                     <div class="card-image">

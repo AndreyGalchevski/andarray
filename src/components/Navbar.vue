@@ -2,16 +2,16 @@
 	<div class="myNavbar">
 		<div class="navbar-fixed">
             <nav>
-                <div class="nav-wrapper grey lighten-1">
+                <div class="nav-wrapper indigo">
 					<a class="sidenav-trigger" ref="#" data-target="slide-out">
-						<i class="material-icons grey lighten-1">menu</i>
+						<i class="material-icons indigo">menu</i>
 					</a>
                     <a  
 						href="#"
 						class="brand-logo center">
 						<img src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1525671114/andarray/logo/logo.png" style="vertical-align: middle"/>
 					</a>
-					<ul class="class hide-on-med-and-down">
+					<ul class="hide-on-med-and-down">
                         <li><a href="#home-section">Home</a></li>
                         <li><a href="#experience-section">Experience</a></li>
                         <li><a href="#portfolio-section">Portfolio</a></li>
@@ -20,7 +20,7 @@
                 </div>
             </nav>
         </div>
-        <ul class="sidenav" id="slide-out" ref="mySideNav">
+        <ul class="sidenav indigo" id="slide-out" ref="mySideNav">
             <li><a href="#home-section" v-on:click="closeSideNav()">Home</a></li>
             <li><a href="#experience-section" v-on:click="closeSideNav()">Experience</a></li>
             <li><a href="#portfolio-section" v-on:click="closeSideNav()">Portfolio</a></li>
@@ -53,8 +53,8 @@ export default {
 </script>
 
 <style scoped>
-nav ul li a {
-    color: #212121;
+nav ul li a, .sidenav li a {
+    color: #fafafa;
 }
 .brand-logo img{
 	height: 5vh;
