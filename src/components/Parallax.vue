@@ -18,7 +18,7 @@ export default {
 	display: flex;
 	flex: 1 0 auto;
 	position: relative;
-	height: 90vh;
+	height: 80vh;
 	transform: translateZ(-1px) scale(2);
 	z-index: -1;
 }

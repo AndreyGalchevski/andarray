@@ -1,7 +1,7 @@
 <template>
 	<div class="portfolio section" id="portfolio-section">
 		<h1>Portfolio</h1>
-        <div class="row container">
+        <div class="row">
             <div class="col s12 m4" v-for="project in projects" :key="project.name">
                 <div class="card">
                     <div class="card-image">
@@ -9,7 +9,7 @@
 							:src="project.imgSrc" 
 							:alt="project.imgAlt" />
 						<a 
-							class="btn-floating halfway-fab waves-effect waves-light red" 
+							class="btn-floating halfway-fab waves-effect waves-light indigo" 
 							:href="project.link"
                             target="_blank">
 							<i class="material-icons">link</i>
