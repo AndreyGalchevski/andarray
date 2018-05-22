@@ -1,5 +1,17 @@
 <template>
 	<div class="home section" id="home-section">
+		<Snowf
+			:amount="50"
+			:size="5"
+			:speed="1.5"
+			:wind="0"
+			:opacity="0.8"
+			:swing="1"
+			:image="null"
+			:zIndex="null"
+			:resize="true"
+			color="#3f51b5"
+		/>
 		<div class="zoomIny">
 			<h1>Andrey Galchevski</h1>
 			<img 
@@ -16,8 +28,13 @@
 </template>
 
 <script>
+import Snowf from 'vue-snowf'
+
 export default {
-	name: 'Home'
+	name: 'Home',
+	components: {
+		Snowf
+	}
 }
 </script>
 

@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <Navbar/>
-    <Home/>
+  <Navbar/>
+  <Home/>
 	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547972/andarray/parallax/code.jpg"/>
-    <Experience/>
+  <Experience/>
 	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/nature.jpg"/>	
-    <Portfolio/>
+  <Portfolio/>
 	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/space.jpg"/>	
-    <Contact/>
+  <Contact/>
   </div>
 </template>
 

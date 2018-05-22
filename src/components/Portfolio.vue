@@ -1,5 +1,17 @@
 <template>
 	<div class="portfolio section" id="portfolio-section">
+		<Snowf
+			:amount="50"
+			:size="5"
+			:speed="1.5"
+			:wind="0"
+			:opacity="0.8"
+			:swing="1"
+			:image="null"
+			:zIndex="null"
+			:resize="true"
+			color="#3f51b5"
+		/>
 		<h1>Portfolio</h1>
         <div class="row">
             <div class="col s12 m4" v-for="project in projects" :key="project.name">
@@ -31,8 +43,13 @@
 </template>
 
 <script>
+import Snowf from 'vue-snowf'
+
 export default {
 	name: 'Portfolio',
+		components: {
+			Snowf
+	},
 	data () {
 		return {
 			projects: [
