@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-  <Navbar/>
-  <Home/>
-	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547972/andarray/parallax/code.jpg"/>
-  <Experience/>
-	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/nature.jpg"/>	
-  <Portfolio/>
-	<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/space.jpg"/>	
-  <Contact/>
+	<Flash class="flash" v-if="show"/>
+	<div v-else>
+		<Navbar/>
+		<Home/>
+		<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547972/andarray/parallax/code.jpg"/>
+		<Experience/>
+		<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/nature.jpg"/>	
+		<Portfolio/>
+		<Parallax img-src="http://res.cloudinary.com/dqvimfd8b/image/upload/v1524547053/andarray/parallax/space.jpg"/>	
+		<Contact/>
+	</div>
   </div>
 </template>
 
 <script>
+import Flash from './components/Flash.vue'
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 import Experience from './components/Experience.vue'
@@ -21,13 +25,24 @@ import Parallax from './components/Parallax.vue'
 
 export default {
   name: 'app',
+	data() {
+		return {
+			show: true
+		}
+	},
+	mounted() {
+		setTimeout(() => {
+			this.show = false
+		}, 4600)
+	},
   components: {
-	Navbar,
-	Home,
-	Experience, 
-	Portfolio,
-	Contact,
-	Parallax
+		Flash,
+		Navbar,
+		Home,
+		Experience, 
+		Portfolio,
+		Contact,
+		Parallax
   }
 }
 </script>

@@ -12,18 +12,24 @@
 			:resize="true"
 			color="#3f51b5"
 		/>
+
 		<div class="zoomIny">
 			<h1>Andrey Galchevski</h1>
 			<img 
 				class="circle responsive-img z-depth-5 zoomIny" 
 				height="80vh" 
 				width="100vh"
-				src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524504338/andarray/avatar/ava.png" />
+				src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524504338/andarray/avatar/ava.png"
+			/>
 		</div>
-        <p class="flow-text bouncy">Passionate about technology</p>
-        <p class="flow-text shaky">Never stop learning</p>
-        <p class="flow-text swingy">Building a better world</p>
-        <p class="flow-text bandy">Through web</p>
+
+		<div>
+			<p class="flow-text bouncy">Passionate about technology</p>
+			<p class="flow-text shaky">Never stop learning</p>
+			<p class="flow-text swingy">Building a better world</p>
+			<p class="flow-text bandy">Through web</p>
+		</div>
+
 	</div>
 </template>
 
@@ -45,7 +51,7 @@ export default {
 	background-color: white;
 	z-index: 1;
 }
-.zoomIny {
+/* .zoomIny {
 	-webkit-animation: zoomIn 1s;
 	animation: zoomIn 1s;
 	-webkit-animation-duration: 1s;
@@ -84,5 +90,5 @@ export default {
 	animation-duration: 1s;
 	-webkit-animation-delay: 4s;		
 	animation-delay: 4s;
-}
+} */
 </style>
