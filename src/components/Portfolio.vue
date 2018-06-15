@@ -1,57 +1,55 @@
 <template>
-	<div class="portfolio section" id="portfolio-section">
-		<Snowf
-			:amount="50"
-			:size="5"
-			:speed="1.5"
-			:wind="0"
-			:opacity="0.8"
-			:swing="1"
-			:image="null"
-			:zIndex="null"
-			:resize="true"
-			color="#3f51b5"
-		/>
+
+	<div class="portfolio section" id="portfolio-section" ref="portfolioRef">
+
 		<h1>Portfolio</h1>
-        <div class="row">
-            <div class="col s12 m4" v-for="project in projects" :key="project.name">
-                <div class="card">
-                    <div class="card-image">
-						<img 
-							:src="project.imgSrc" 
-							:alt="project.imgAlt" />
-						<a 
-							class="btn-floating halfway-fab waves-effect waves-light indigo" 
-							:href="project.link"
-                            target="_blank">
-							<i class="material-icons">link</i>
-						</a>
+			<div class="row">
+
+					<div class="col s12 m4" v-for="project in projects" :key="project.name">
+
+						<div class="card">
+
+							<div class="card-image">
+								<img 
+									:src="project.imgSrc" 
+									:alt="project.imgAlt" 
+								/>
+								<a 
+									class="btn-floating halfway-fab waves-effect waves-light indigo" 
+									:href="project.link"
+									target="_blank">
+									<i class="material-icons">link</i>
+								</a>
+							</div>
+
+							<div class="card-content">
+								<p class="flow-text">{{project.name}}</p>
+								<span v-for="tech in project.techs" :key="tech.name">
+									<img 
+										class="tech-logo" 
+										:src="tech.logoSrc"
+										:alt="tech.logoAlt" 
+									/>	
+								</span>
+							</div>
+
+						</div>
+
 					</div>
-                    <div class="card-content">
-                        <p class="flow-text">{{project.name}}</p>
-						<span v-for="tech in project.techs" :key="tech.name">
-							<img 
-								class="tech-logo" 
-								:src="tech.logoSrc"
-								:alt="tech.logoAlt" />
-						</span>
-                    </div>
-                </div>
-            </div>
-		</div>
+
+			</div>
+
 	</div>
 </template>
 
 <script>
-import Snowf from 'vue-snowf'
+import M from 'materialize-css/dist/js/materialize.js'
 
 export default {
 	name: 'Portfolio',
-		components: {
-			Snowf
-	},
 	data () {
 		return {
+			scrollSpyInstance: null,
 			projects: [
 				{
 					name: 'Total Liberation',
@@ -139,16 +137,16 @@ export default {
 				}
 			]
 		}
+	},
+	mounted() {
+		this.scrollSpyInstance = M.ScrollSpy.init(this.$refs.portfolioRef, {})
 	}
 }
 </script>
 
 <style scoped>
 .portfolio {
-	display: block;
-	position: relative;
 	background-color: white;
-	z-index: 1;
 }
 .tech-logo {
 	-webkit-align-content: center;

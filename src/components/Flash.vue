@@ -1,12 +1,18 @@
 <template>
+
 	<div class="flash-logo bounceOutUpy">
+
 		<div class="pulsy">
+
 			<div class="left-bracket fadeInLefty">[</div>
 			<div class="first-amp fadeInDowny">&</div>
 			<div class="second-amp fadeInUpy">&</div>
 			<div class="right-bracket fadeInRighty">]</div>
+
 		</div>
+
 	</div>
+	
 </template>
 
 <style scoped>
@@ -18,18 +24,20 @@
 	display: inline-block;
 }
 .left-bracket {
-	color: blue;
+	color: #03a9f4;
 }
 .first-amp {
-	color: green;
+	color: white;
+	-webkit-text-stroke: 0.8px black;
 	margin-top: 50px;
 }
 .second-amp {
-	color: green;
+	color: white;
+	-webkit-text-stroke: 0.8px black;
 	margin-top: 50px;
 }
 .right-bracket {
-	color: blue;
+	color: #03a9f4;
 }
 .fadeInLefty {
 	-webkit-animation: fadeInLeftBig 2s;

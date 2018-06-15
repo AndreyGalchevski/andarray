@@ -1,54 +1,53 @@
 <template>
-	<div class="experience section" id="experience-section">
-		<Snowf
-			:amount="50"
-			:size="5"
-			:speed="1.5"
-			:wind="0"
-			:opacity="0.8"
-			:swing="1"
-			:image="null"
-			:zIndex="null"
-			:resize="true"
-			color="#3f51b5"
-		/>
+
+	<div class="experience section" id="experience-section" ref="experienceRef">
+
 		<h1>Experience</h1>
 		<div class="row">
+
 			<div class="col s12 m4" v-for="position in positions" :key="position.name">
+
 				<div class="card">
+
 					<div class="card-image waves-effect waves-block waves-light">
 						<img 
 							class="activator position-img" 
 							:src="position.imgSrc"
-							:alt="position.imgAlt">
+							:alt="position.imgAlt"
+						>
 					</div>
+
 					<div class="card-content">
 						<span class="card-title activator grey-text text-darken-4">{{position.name}}
 							<i class="material-icons right">more_vert</i>
 						</span>
 					</div>
+
 					<div class="card-reveal">
 						<span class="card-title grey-text text-darken-4">{{position.name}}
 							<i class="material-icons right">close</i>
 						</span>
-					<p class="position-description">{{position.description}}</p>
+						<p class="position-description">{{position.description}}</p>
 					</div>
+
 				</div>
+
 			</div>
+
 		</div>
+
 	</div>
+
 </template>
 
 <script>
-import Snowf from 'vue-snowf'
+import M from 'materialize-css/dist/js/materialize.js'
 
 export default {
 	name: 'Experience',
-	components: {
-		Snowf
-	},
 	data () {
 		return {
+			scrollSpyInstance: null,
 			positions: [
 				{
 					name: 'Data Analyst',
@@ -123,16 +122,16 @@ class FullStackDev extends Human{
 				}
 			]
 		}
+	},
+	mounted() {
+		this.scrollSpyInstance = M.ScrollSpy.init(this.$refs.experienceRef, {})
 	}
 }
 </script>
 
 <style scoped>
 .experience {
-	display: block;
-	position: relative;
 	background-color: white;
-	z-index: 1;
 }
 .position-img {
 	height: 261px;

@@ -1,17 +1,6 @@
 <template>
-	<div class="home section" id="home-section">
-		<Snowf
-			:amount="50"
-			:size="5"
-			:speed="1.5"
-			:wind="0"
-			:opacity="0.8"
-			:swing="1"
-			:image="null"
-			:zIndex="null"
-			:resize="true"
-			color="#3f51b5"
-		/>
+
+	<div class="home section" id="home-section" ref="homeRef">
 
 		<div class="zoomIny">
 			<h1>Andrey Galchevski</h1>
@@ -31,25 +20,28 @@
 		</div>
 
 	</div>
+
 </template>
 
 <script>
-import Snowf from 'vue-snowf'
+import M from 'materialize-css/dist/js/materialize.js'
 
 export default {
 	name: 'Home',
-	components: {
-		Snowf
+	data() {
+		return {
+			scrollSpyInstance: null
+		}
+	},
+	mounted() {
+		this.scrollSpyInstance = M.ScrollSpy.init(this.$refs.homeRef, {})
 	}
 }
 </script>
 
 <style scoped>
 .home {
-	display: block;
-	position: relative;
 	background-color: white;
-	z-index: 1;
 }
 /* .zoomIny {
 	-webkit-animation: zoomIn 1s;

@@ -1,6 +1,9 @@
 <template>
+
 	<div class="myNavbar">
+
 		<div class="navbar-fixed">
+
 			<nav>
 				<div class="nav-wrapper indigo">
 					<a class="sidenav-trigger" ref="#" data-target="slide-out">
@@ -19,14 +22,18 @@
 					</ul>
 				</div>
 			</nav>
+			
 		</div>
+
 		<ul class="sidenav indigo" id="slide-out" ref="mySideNav">
 			<li><a href="#home-section" v-on:click="closeSideNav()">Home</a></li>
 			<li><a href="#experience-section" v-on:click="closeSideNav()">Experience</a></li>
 			<li><a href="#portfolio-section" v-on:click="closeSideNav()">Portfolio</a></li>
 			<li><a href="#contact-section" v-on:click="closeSideNav()">Contact</a></li>
 		</ul>
+
 	</div>
+
 </template>
 
 <script>
