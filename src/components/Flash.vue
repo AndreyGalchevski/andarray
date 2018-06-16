@@ -17,6 +17,7 @@
 
 <style scoped>
 .flash-logo {
+	font-family: 'Merriweather', serif;
 	font-size: 100px;
 	margin-top: 30vh;
 }
@@ -27,13 +28,13 @@
 	color: #03a9f4;
 }
 .first-amp {
-	color: white;
-	-webkit-text-stroke: 0.8px black;
+	color: #3f51b5;
+	-webkit-text-stroke: 0.8px #03a9f4;
 	margin-top: 50px;
 }
 .second-amp {
-	color: white;
-	-webkit-text-stroke: 0.8px black;
+	color: #3f51b5;
+	-webkit-text-stroke: 0.8px #03a9f4;
 	margin-top: 50px;
 }
 .right-bracket {
