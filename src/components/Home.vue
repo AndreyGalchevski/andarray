@@ -11,8 +11,7 @@
 				src="https://res.cloudinary.com/dqvimfd8b/image/upload/v1524504338/andarray/avatar/ava.png"
 			/>
 		</div>
-
-		<div>
+		<div class="home-text">
 			<p class="flow-text bouncy">Passionate about technology</p>
 			<p class="flow-text shaky">Never stop learning</p>
 			<p class="flow-text swingy">Building a better world</p>
