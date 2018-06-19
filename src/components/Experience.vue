@@ -27,7 +27,7 @@
 						<span class="card-title grey-text text-darken-4">{{position.name}}
 							<i class="material-icons right">close</i>
 						</span>
-						<p class="position-description">{{position.description}}</p>
+						<pre class="language-js"><code>{{position.description}}</code></pre>
 					</div>
 
 				</div>
@@ -59,15 +59,15 @@ class DataAnalyst extends Human {
   }
 
   writeQueries() {
-    console.log('DROP TABLE USERS')
+    console.log("DROP TABLE USERS")
   }
 
   beautifyData() {
-    console.log('ohhh! that's a pretty graph)
+    console.log("ohhh! that's a pretty graph")
   }
 
   getFrustratedAtSas() {
-    console.log('i guess it's coffee time)
+    console.log("i guess it's coffee time")
   }
 }
 					`,
@@ -84,15 +84,15 @@ class TeamLead extends Human {
   }
 
   performCodeReview() {
-    console.log('get gid of the semicolons!')
+    console.log("get gid of the semicolons!")
   }
 
   setDeadline() {
-    console.log('i don't see why it's impossible')
+    console.log("i don't see why it's impossible")
   }
 
   motivateTheTeam() {
-    console.log('you can do it!')		
+    console.log("you can do it!")		
   }
 }
 					`,
@@ -107,13 +107,13 @@ class FullStackDev extends Human{
     super(name)
   }
   writeCode() {
-    console.log('beep boop beep beep boop')
+    console.log("beep boop beep beep boop")
   }
   drinkCoffee() {
-    console.log('mmm... coffee')
+    console.log("mmm... coffee")
   }
   writeMoreCode() {
-    console.log('beep boop beep beep boop')
+    console.log("beep boop beep beep boop")
   }
 }
 					`,

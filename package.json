@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "materialize-css": "^1.0.0-rc.1",
-    "vue": "^2.5.16"
+    "vue": "^2.5.16",
+    "vue-prism": "^1.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.9",
